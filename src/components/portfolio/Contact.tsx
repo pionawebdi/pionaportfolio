@@ -24,8 +24,8 @@ export function Contact() {
         </Reveal>
         <Reveal delay={0.4}>
           <div className="mt-10 flex flex-wrap justify-center gap-3">
-            <a href="mailto:hello@example.com" className="btn-neon">
-              <Mail className="w-4 h-4" /> hello@example.com <ArrowUpRight className="w-4 h-4" />
+            <a href="mailto:webdibi@naver.com" className="btn-neon">
+              <Mail className="w-4 h-4" /> webdibi@naver.com <ArrowUpRight className="w-4 h-4" />
             </a>
             <a href="#" className="btn-ghost">Download CV</a>
           </div>
@@ -49,8 +49,8 @@ export function Contact() {
 
       <footer className="relative z-10 mt-24 pt-8 border-t border-white/10 max-w-6xl mx-auto">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-white/40">
-          <div>© 2026 UI × AI Portfolio. Designed with insight, built with AI.</div>
-          <div className="font-mono">v1.0 · Seoul, KR</div>
+          <div>© 2026 UIUX Portfolio. Designed with insight, built with AI.</div>
+          <div className="font-mono">UIUX · Seoul, KR</div>
         </div>
       </footer>
     </section>

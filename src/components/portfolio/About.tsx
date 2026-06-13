@@ -35,7 +35,7 @@ export function About() {
 
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { v: "5+", l: "Years in UI" },
+            { v: "20", l: "Years in UIUX" },
             { v: "30+", l: "Projects" },
             { v: "10+", l: "AI Tools" },
             { v: "∞", l: "Iterations" },

@@ -1,7 +1,7 @@
 "use client";
-import { motion, useMotionValue, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowUpRight, Mail, Sparkles, Layers, Wand2, Frame } from "lucide-react";
-import { useRef, type MouseEvent } from "react";
+import { useRef } from "react";
 
 export function Hero() {
   const ref = useRef<HTMLDivElement>(null);
@@ -10,35 +10,11 @@ export function Hero() {
   const y2 = useTransform(scrollYProgress, [0, 1], [0, -60]);
   const y3 = useTransform(scrollYProgress, [0, 1], [0, -200]);
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
-  const mouseX = useMotionValue(0);
-  const mouseY = useMotionValue(0);
-  const parallaxX = useTransform(mouseX, [-1, 1], [-10, 10]);
-  const parallaxY = useTransform(mouseY, [-1, 1], [-8, 8]);
-  const inverseParallaxX = useTransform(mouseX, [-1, 1], [7, -7]);
-  const inverseParallaxY = useTransform(mouseY, [-1, 1], [6, -6]);
-
-  const handleMouseMove = (event: MouseEvent<HTMLElement>) => {
-    if (window.matchMedia("(pointer: coarse)").matches) return;
-    const rect = event.currentTarget.getBoundingClientRect();
-    mouseX.set(((event.clientX - rect.left) / rect.width - 0.5) * 2);
-    mouseY.set(((event.clientY - rect.top) / rect.height - 0.5) * 2);
-  };
 
   return (
-    <section
-      ref={ref}
-      id="top"
-      onMouseMove={handleMouseMove}
-      onMouseLeave={() => {
-        mouseX.set(0);
-        mouseY.set(0);
-      }}
-      className="aurora-bg noise relative overflow-hidden min-h-[100svh] flex items-center pt-28 pb-24"
-    >
-      <div className="hero-moving-grid absolute inset-0 pointer-events-none" />
-
+    <section ref={ref} id="top" className="aurora-bg noise relative overflow-hidden min-h-[100svh] flex items-center pt-28 pb-24">
       {/* Floating editorial panels */}
-      <motion.div style={{ y: y1, x: inverseParallaxX }} className="hidden md:block absolute top-[18%] left-[6%] z-10 float-y">
+      <motion.div style={{ y: y1 }} className="hidden md:block absolute top-[18%] left-[6%] z-10 float-y">
         <div className="glass-strong w-[220px] p-4 -rotate-6">
           <div className="flex items-center justify-between mb-5">
             <span className="text-[10px] uppercase tracking-[0.22em] text-white/45">Layout map</span>
@@ -59,7 +35,7 @@ export function Hero() {
         </div>
       </motion.div>
 
-      <motion.div style={{ y: y2, x: parallaxX }} className="hidden md:block absolute top-[14%] right-[5%] z-10 float-y-slow">
+      <motion.div style={{ y: y2 }} className="hidden md:block absolute top-[14%] right-[5%] z-10 float-y-slow">
         <div className="glass-strong w-[260px] p-4 rotate-6">
           <div className="flex items-center justify-between mb-3">
             <span className="text-xs text-white/60">Motion brief</span>
@@ -76,7 +52,7 @@ export function Hero() {
         </div>
       </motion.div>
 
-      <motion.div style={{ y: y3, x: parallaxX }} className="hidden lg:block absolute bottom-[12%] left-[10%] z-10 float-y">
+      <motion.div style={{ y: y3 }} className="hidden lg:block absolute bottom-[12%] left-[10%] z-10 float-y">
         <div className="glass w-[180px] p-3 rotate-3">
           <Frame className="w-4 h-4 text-[#E7F064] mb-2" />
           <div className="h-1.5 w-full rounded-full bg-white/10 mb-1.5" />
@@ -84,7 +60,7 @@ export function Hero() {
         </div>
       </motion.div>
 
-      <motion.div style={{ y: y2, x: inverseParallaxX }} className="hidden lg:block absolute bottom-[18%] right-[12%] z-10 float-y-slow">
+      <motion.div style={{ y: y2 }} className="hidden lg:block absolute bottom-[18%] right-[12%] z-10 float-y-slow">
         <div className="glass w-[200px] p-3 -rotate-3">
           <Layers className="w-4 h-4 text-[#8EA7FF] mb-2" />
           <div className="flex items-end gap-1 h-12">
@@ -99,28 +75,21 @@ export function Hero() {
       {/* Editorial kinetic frame */}
       <motion.div
         className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
-        style={{ opacity, x: parallaxX, y: parallaxY }}
+        style={{ opacity }}
       >
         <div className="relative w-[520px] h-[520px] sm:w-[700px] sm:h-[700px]">
           <motion.div
             animate={{ rotate: 360 }}
             transition={{ duration: 36, repeat: Infinity, ease: "linear" }}
-            className="absolute inset-[10%] border border-white/16"
+            className="absolute inset-[10%] border border-white/10"
           />
           <motion.div
             animate={{ rotate: -360 }}
             transition={{ duration: 48, repeat: Infinity, ease: "linear" }}
-            className="absolute inset-[24%] border border-white/18"
+            className="absolute inset-[24%] border border-white/12"
           />
-          <motion.div
-            className="absolute left-1/2 top-0 h-full w-px bg-white/14 motion-line-y"
-            style={{ y: inverseParallaxY }}
-          />
-          <motion.div
-            className="absolute top-1/2 left-0 w-full h-px bg-white/14 motion-line-x"
-            style={{ x: inverseParallaxX }}
-          />
-          <div className="absolute top-[42%] left-[12%] h-px w-[76%] bg-[#E7F064]/45 motion-line-x motion-line-accent" />
+          <div className="absolute left-1/2 top-0 h-full w-px bg-white/8" />
+          <div className="absolute top-1/2 left-0 w-full h-px bg-white/8" />
         </div>
       </motion.div>
 

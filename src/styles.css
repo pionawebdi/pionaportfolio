@@ -146,45 +146,6 @@ html, body, #root {
   transform-origin: left;
 }
 
-.hero-moving-grid {
-  opacity: 0.72;
-  background-image:
-    linear-gradient(rgba(255,255,255,0.055) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px);
-  background-size: 84px 84px;
-  mask-image: radial-gradient(ellipse 72% 62% at 50% 42%, black 0%, transparent 78%);
-  animation: move-grid 34s linear infinite;
-}
-
-.motion-line-x {
-  transform-origin: center;
-  animation: line-scale-x 6.5s ease-in-out infinite;
-}
-
-.motion-line-y {
-  transform-origin: center;
-  animation: line-scale-y 7.5s ease-in-out infinite;
-}
-
-.motion-line-accent {
-  animation-duration: 8s;
-  animation-delay: -2s;
-}
-
-@keyframes move-grid {
-  to { background-position: 84px 84px; }
-}
-
-@keyframes line-scale-x {
-  0%, 100% { scale: 0.72 1; opacity: 0.5; }
-  50% { scale: 1 1; opacity: 0.9; }
-}
-
-@keyframes line-scale-y {
-  0%, 100% { scale: 1 0.68; opacity: 0.45; }
-  50% { scale: 1 1; opacity: 0.82; }
-}
-
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {

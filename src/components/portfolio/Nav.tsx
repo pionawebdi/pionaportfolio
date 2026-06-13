@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import { Sparkles } from "lucide-react";
 
 const links = [
   { label: "About", href: "#about" },
@@ -19,11 +18,8 @@ export function Nav() {
       className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[min(960px,calc(100%-24px))]"
     >
       <div className="border border-white/12 bg-[#090B10]/95 shadow-2xl flex items-center justify-between px-4 sm:px-5 py-3 rounded-xl">
-        <a href="#top" className="flex items-center gap-2 font-semibold text-white">
-          <span className="inline-flex w-7 h-7 rounded-md items-center justify-center bg-white">
-            <Sparkles className="w-3.5 h-3.5 text-black" />
-          </span>
-          <span className="hidden sm:inline tracking-tight">UI × AI</span>
+        <a href="#top" className="font-bold tracking-tight text-white text-xl sm:text-2xl">
+          UIUX x AI
         </a>
         <ul className="hidden md:flex items-center gap-1 text-sm text-white/70">
           {links.map((l) => (

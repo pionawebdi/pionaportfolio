@@ -115,7 +115,7 @@ export function Hero() {
           className="text-gradient font-bold tracking-tight leading-[1.05]"
           style={{ fontFamily: "Space Grotesk, sans-serif", fontSize: "clamp(2.6rem, 8vw, 6.5rem)" }}
         >
-          UI Designer <span className="text-gradient-neon">×</span><br className="hidden sm:block" /> Generative AI
+          UIUX <span className="text-gradient-neon">×</span><br className="hidden sm:block" /> Generative AI
         </motion.h1>
 
         <motion.p

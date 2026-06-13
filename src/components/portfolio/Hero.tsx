@@ -99,7 +99,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="inline-flex items-center gap-2 rounded-lg border border-white/15 bg-white text-black px-4 py-1.5 mb-8 text-xs sm:text-sm font-semibold"
+          className="inline-flex items-center gap-2 rounded-lg border border-white/20 bg-white/85 text-black/90 shadow-[0_14px_34px_rgba(0,0,0,0.22)] px-4 py-1.5 mb-8 text-xs sm:text-sm font-semibold"
         >
           <span className="relative flex w-1.5 h-1.5">
             <span className="absolute inline-flex w-full h-full rounded-full bg-emerald-400 animate-ping opacity-75" />

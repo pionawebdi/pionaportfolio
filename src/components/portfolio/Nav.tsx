@@ -18,7 +18,7 @@ export function Nav() {
       className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[min(960px,calc(100%-24px))]"
     >
       <div className="border border-white/12 bg-[#090B10]/95 shadow-2xl flex items-center justify-between px-4 sm:px-5 py-3 rounded-xl">
-        <a href="#top" className="font-bold tracking-tight text-white text-xl sm:text-2xl">
+        <a href="#top" className="font-semibold tracking-tight text-white">
           UIUX x AI
         </a>
         <ul className="hidden md:flex items-center gap-1 text-sm text-white/70">

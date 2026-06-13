@@ -1,29 +1,30 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { HeroSection } from "@/components/portfolio/HeroSection";
+import { MarqueeSection } from "@/components/portfolio/MarqueeSection";
+import { AboutSection } from "@/components/portfolio/AboutSection";
+import { ServicesSection } from "@/components/portfolio/ServicesSection";
+import { ProjectsSection } from "@/components/portfolio/ProjectsSection";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Jack — 3D Creator" },
+      { name: "description", content: "Jack — a 3D creator driven by crafting striking and unforgettable projects." },
+      { property: "og:title", content: "Jack — 3D Creator" },
+      { property: "og:description", content: "Jack — a 3D creator driven by crafting striking and unforgettable projects." },
     ],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <main style={{ backgroundColor: "#0C0C0C", overflowX: "clip" }}>
+      <HeroSection />
+      <MarqueeSection />
+      <AboutSection />
+      <ServicesSection />
+      <ProjectsSection />
+    </main>
   );
 }

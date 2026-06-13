@@ -1,17 +1,21 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { HeroSection } from "@/components/portfolio/HeroSection";
-import { MarqueeSection } from "@/components/portfolio/MarqueeSection";
-import { AboutSection } from "@/components/portfolio/AboutSection";
-import { ServicesSection } from "@/components/portfolio/ServicesSection";
-import { ProjectsSection } from "@/components/portfolio/ProjectsSection";
+import { Nav } from "@/components/portfolio/Nav";
+import { Hero } from "@/components/portfolio/Hero";
+import { About } from "@/components/portfolio/About";
+import { Strengths } from "@/components/portfolio/Strengths";
+import { Process } from "@/components/portfolio/Process";
+import { Tools } from "@/components/portfolio/Tools";
+import { Projects } from "@/components/portfolio/Projects";
+import { WhyAI } from "@/components/portfolio/WhyAI";
+import { Contact } from "@/components/portfolio/Contact";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Jack — 3D Creator" },
-      { name: "description", content: "Jack — a 3D creator driven by crafting striking and unforgettable projects." },
-      { property: "og:title", content: "Jack — 3D Creator" },
-      { property: "og:description", content: "Jack — a 3D creator driven by crafting striking and unforgettable projects." },
+      { title: "UI Designer × Generative AI — Portfolio" },
+      { name: "description", content: "사용자 경험을 설계하고, 생성형 AI로 더 빠르게 시각화하는 UI 디자이너의 포트폴리오." },
+      { property: "og:title", content: "UI Designer × Generative AI" },
+      { property: "og:description", content: "사용자 경험을 설계하고, 생성형 AI로 더 빠르게 시각화하는 디자이너." },
     ],
   }),
   component: Index,
@@ -19,12 +23,16 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <main style={{ backgroundColor: "#0C0C0C", overflowX: "clip" }}>
-      <HeroSection />
-      <MarqueeSection />
-      <AboutSection />
-      <ServicesSection />
-      <ProjectsSection />
+    <main style={{ overflowX: "clip", backgroundColor: "#05060A" }}>
+      <Nav />
+      <Hero />
+      <About />
+      <Strengths />
+      <Process />
+      <Tools />
+      <Projects />
+      <WhyAI />
+      <Contact />
     </main>
   );
 }

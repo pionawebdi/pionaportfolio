@@ -5,9 +5,10 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   base: "/pionaportfolio/",
+  root: "pages",
   plugins: [react(), tailwindcss(), tsconfigPaths()],
   build: {
-    outDir: "dist-pages",
+    outDir: "../dist-pages",
     emptyOutDir: true,
   },
 });

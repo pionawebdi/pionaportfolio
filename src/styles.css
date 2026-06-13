@@ -3,13 +3,13 @@
 @import "tw-animate-css";
 
 @theme {
-  --font-display: "Space Grotesk", "Pretendard Variable", sans-serif;
-  --font-sans: "Pretendard Variable", "Inter", sans-serif;
+  --font-display: "Wanted Sans Variable", "Wanted Sans", sans-serif;
+  --font-sans: "Wanted Sans Variable", "Wanted Sans", sans-serif;
 }
 
 html, body, #root {
   background-color: #05060A;
-  font-family: "Pretendard Variable", "Inter", system-ui, sans-serif;
+  font-family: "Wanted Sans Variable", "Wanted Sans", system-ui, sans-serif;
   color: #E6EAF2;
   -webkit-font-smoothing: antialiased;
 }

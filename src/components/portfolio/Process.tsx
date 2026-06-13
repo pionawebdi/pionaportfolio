@@ -20,7 +20,7 @@ export function Process() {
         </Reveal>
         <Reveal delay={0.1}>
           <h2 className="text-gradient font-bold leading-[1.1] tracking-tight mb-4"
-            style={{ fontFamily: "Space Grotesk, sans-serif", fontSize: "clamp(2rem, 5vw, 4rem)" }}>
+            style={{ fontFamily: "Wanted Sans Variable, sans-serif", fontSize: "clamp(2rem, 5vw, 4rem)" }}>
             AI-enhanced <br /> design process.
           </h2>
         </Reveal>

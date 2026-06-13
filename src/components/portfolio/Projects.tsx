@@ -41,7 +41,7 @@ export function Projects() {
         </Reveal>
         <Reveal delay={0.1}>
           <h2 className="text-gradient font-bold leading-[1.1] tracking-tight mb-4"
-            style={{ fontFamily: "Space Grotesk, sans-serif", fontSize: "clamp(2rem, 5vw, 4rem)" }}>
+            style={{ fontFamily: "Wanted Sans Variable, sans-serif", fontSize: "clamp(2rem, 5vw, 4rem)" }}>
             Selected projects.
           </h2>
         </Reveal>
@@ -86,7 +86,7 @@ export function Projects() {
                   <div className="md:col-span-7">
                     <div className="flex items-start justify-between gap-4 mb-3">
                       <h3 className="text-white font-semibold leading-tight"
-                        style={{ fontFamily: "Space Grotesk, sans-serif", fontSize: "clamp(1.3rem, 2.5vw, 1.85rem)" }}>
+                        style={{ fontFamily: "Wanted Sans Variable, sans-serif", fontSize: "clamp(1.3rem, 2.5vw, 1.85rem)" }}>
                         {p.title}
                       </h3>
                       <div className="shrink-0 w-10 h-10 rounded-md bg-white flex items-center justify-center group-hover:rotate-45 transition-transform duration-500">

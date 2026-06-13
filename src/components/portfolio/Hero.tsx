@@ -113,7 +113,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           className="text-gradient font-bold tracking-tight leading-[1.05]"
-          style={{ fontFamily: "Space Grotesk, sans-serif", fontSize: "clamp(2.6rem, 8vw, 6.5rem)" }}
+          style={{ fontFamily: "Wanted Sans Variable, sans-serif", fontSize: "clamp(2.6rem, 8vw, 6.5rem)" }}
         >
           UIUX <span className="text-gradient-neon">×</span><br className="hidden sm:block" /> Generative AI
         </motion.h1>

@@ -11,7 +11,7 @@ export function Contact() {
         </Reveal>
         <Reveal delay={0.1}>
           <h2 className="text-gradient font-bold leading-[1.05] tracking-tight"
-            style={{ fontFamily: "Space Grotesk, sans-serif", fontSize: "clamp(2.2rem, 6.5vw, 5.5rem)" }}>
+            style={{ fontFamily: "Wanted Sans Variable, sans-serif", fontSize: "clamp(2.2rem, 6.5vw, 5.5rem)" }}>
             Designing better interfaces <br />
             with <span className="text-gradient-neon">human insight</span> <br />
             and <span className="text-gradient-neon">AI speed</span>.

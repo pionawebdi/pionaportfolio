@@ -10,7 +10,7 @@ export function About() {
         </Reveal>
         <Reveal delay={0.1}>
           <h2 className="text-gradient font-bold leading-[1.1] tracking-tight"
-            style={{ fontFamily: "Space Grotesk, sans-serif", fontSize: "clamp(2rem, 5vw, 4rem)" }}>
+            style={{ fontFamily: "Wanted Sans Variable, sans-serif", fontSize: "clamp(2rem, 5vw, 4rem)" }}>
             디자인의 직관, <br /> AI의 속도로 확장하다.
           </h2>
         </Reveal>
@@ -43,7 +43,7 @@ export function About() {
             <Reveal key={s.l} delay={0.1 * i}>
               <div className="glass p-6 text-center group hover:border-[#E7F064]/70 transition-all duration-500">
                 <div className="text-gradient-neon font-bold text-4xl mb-1"
-                  style={{ fontFamily: "Space Grotesk, sans-serif" }}>{s.v}</div>
+                  style={{ fontFamily: "Wanted Sans Variable, sans-serif" }}>{s.v}</div>
                 <div className="text-xs uppercase tracking-widest text-white/50">{s.l}</div>
               </div>
             </Reveal>

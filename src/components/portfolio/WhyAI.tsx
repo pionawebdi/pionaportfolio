@@ -33,13 +33,10 @@ export function WhyAI() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {reasons.map((r, i) => (
             <Reveal key={r.title} delay={i * 0.08}>
-              <div className="glass p-7 h-full hover:border-white/25 transition-all duration-500 group">
-                <div className="w-12 h-12 rounded-xl mb-5 flex items-center justify-center relative">
-                  <div className="absolute inset-0 rounded-xl blur-md opacity-60 group-hover:opacity-100 transition-opacity"
-                    style={{ background: "linear-gradient(135deg, #7C5CFF, #00D1FF)" }} />
-                  <div className="glass-strong relative w-full h-full rounded-xl flex items-center justify-center">
-                    <r.icon className="w-5 h-5 text-white" />
-                  </div>
+              <div className="glass p-7 h-full hover:border-[#8EA7FF]/70 transition-all duration-500 group relative overflow-hidden">
+                <div className="absolute bottom-0 left-0 h-px w-0 bg-[#8EA7FF] transition-all duration-500 group-hover:w-full" />
+                <div className="w-12 h-12 rounded-lg mb-5 flex items-center justify-center bg-white text-black transition-transform duration-500 group-hover:-translate-y-1">
+                  <r.icon className="w-5 h-5" />
                 </div>
                 <h3 className="text-white font-semibold mb-2 text-lg">{r.title}</h3>
                 <p className="text-white/55 text-sm leading-relaxed">{r.desc}</p>

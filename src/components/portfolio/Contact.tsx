@@ -4,7 +4,7 @@ import { Mail, ArrowUpRight, Github, Instagram, Linkedin } from "lucide-react";
 
 export function Contact() {
   return (
-    <section id="contact" className="relative py-32 px-6 aurora-bg overflow-hidden">
+    <section id="contact" className="relative py-32 px-6 bg-[#080A0F] overflow-hidden border-t border-white/10">
       <div className="max-w-5xl mx-auto text-center relative z-10">
         <Reveal>
           <div className="text-xs uppercase tracking-[0.3em] text-white/40 mb-6">07 — Contact</div>
@@ -39,7 +39,7 @@ export function Contact() {
               { icon: Github, href: "#", label: "Github" },
             ].map((s) => (
               <a key={s.label} href={s.href} aria-label={s.label}
-                className="glass w-11 h-11 rounded-full flex items-center justify-center hover:border-white/30 hover:-translate-y-1 transition-all">
+                className="glass w-11 h-11 rounded-md flex items-center justify-center hover:border-[#E7F064]/70 hover:-translate-y-1 transition-all">
                 <s.icon className="w-4 h-4 text-white/80" />
               </a>
             ))}

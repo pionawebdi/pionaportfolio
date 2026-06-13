@@ -33,19 +33,18 @@ export function Process() {
 
         <div className="relative">
           {/* Connecting line */}
-          <div className="hidden md:block absolute top-12 left-0 right-0 h-px"
-            style={{ background: "linear-gradient(90deg, transparent, rgba(124,92,255,0.5), rgba(0,209,255,0.5), rgba(255,89,199,0.5), transparent)" }} />
+          <Reveal>
+            <div className="hidden md:block absolute top-12 left-0 right-0 h-px bg-white/14" />
+          </Reveal>
 
           <div className="grid grid-cols-2 md:grid-cols-6 gap-6">
             {steps.map((s, i) => (
               <Reveal key={s.label} delay={i * 0.08}>
                 <div className="relative text-center">
                   <div className="relative mx-auto w-24 h-24 mb-5">
-                    <div className="absolute inset-0 rounded-2xl blur-xl opacity-50"
-                      style={{ background: `linear-gradient(135deg, hsl(${250 + i * 20}, 80%, 60%), hsl(${200 + i * 25}, 80%, 60%))` }} />
-                    <div className="glass-strong relative w-full h-full rounded-2xl flex items-center justify-center">
-                      <s.icon className="w-7 h-7 text-white" />
-                      <div className="absolute -top-2 -right-2 w-6 h-6 rounded-full glass-strong text-[10px] flex items-center justify-center text-white/70 font-mono">
+                    <div className="glass-strong relative w-full h-full rounded-xl flex items-center justify-center transition-transform duration-500 hover:-translate-y-2 hover:border-[#E7F064]/70">
+                      <s.icon className="w-7 h-7 text-[#E7F064]" />
+                      <div className="absolute -top-2 -right-2 w-6 h-6 rounded-md bg-white text-[10px] flex items-center justify-center text-black font-mono">
                         0{i + 1}
                       </div>
                     </div>

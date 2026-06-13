@@ -26,12 +26,11 @@ export function Tools() {
           </h2>
         </Reveal>
 
-        <div className="flex flex-wrap gap-3">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
           {tools.map((t, i) => (
             <Reveal key={t.name} delay={i * 0.05}>
-              <div className="glass px-5 py-3.5 flex items-center gap-3 hover:border-white/30 hover:-translate-y-1 transition-all duration-300 cursor-default">
-                <div className="w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold text-white"
-                  style={{ background: `linear-gradient(135deg, hsl(${(i * 47) % 360}, 75%, 55%), hsl(${(i * 47 + 60) % 360}, 75%, 55%))` }}>
+              <div className="glass px-5 py-4 flex items-center gap-3 hover:border-[#E7F064]/70 hover:-translate-y-1 transition-all duration-300 cursor-default group">
+                <div className="w-8 h-8 rounded-md flex items-center justify-center text-xs font-bold bg-white text-black transition-transform duration-500 group-hover:rotate-6">
                   {t.name[0]}
                 </div>
                 <div>

@@ -41,7 +41,7 @@ export function About() {
             { v: "∞", l: "Iterations" },
           ].map((s, i) => (
             <Reveal key={s.l} delay={0.1 * i}>
-              <div className="glass p-6 text-center">
+              <div className="glass p-6 text-center group hover:border-[#E7F064]/70 transition-all duration-500">
                 <div className="text-gradient-neon font-bold text-4xl mb-1"
                   style={{ fontFamily: "Space Grotesk, sans-serif" }}>{s.v}</div>
                 <div className="text-xs uppercase tracking-widest text-white/50">{s.l}</div>

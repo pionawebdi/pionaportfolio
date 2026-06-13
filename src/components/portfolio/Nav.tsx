@@ -18,18 +18,17 @@ export function Nav() {
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[min(960px,calc(100%-24px))]"
     >
-      <div className="glass flex items-center justify-between px-4 sm:px-5 py-3">
+      <div className="border border-white/12 bg-[#090B10]/95 shadow-2xl flex items-center justify-between px-4 sm:px-5 py-3 rounded-xl">
         <a href="#top" className="flex items-center gap-2 font-semibold text-white">
-          <span className="inline-flex w-7 h-7 rounded-full items-center justify-center"
-            style={{ background: "linear-gradient(135deg, #7C5CFF, #00D1FF)" }}>
-            <Sparkles className="w-3.5 h-3.5 text-white" />
+          <span className="inline-flex w-7 h-7 rounded-md items-center justify-center bg-white">
+            <Sparkles className="w-3.5 h-3.5 text-black" />
           </span>
           <span className="hidden sm:inline tracking-tight">UI × AI</span>
         </a>
         <ul className="hidden md:flex items-center gap-1 text-sm text-white/70">
           {links.map((l) => (
             <li key={l.href}>
-              <a href={l.href} className="px-3 py-2 rounded-full hover:text-white hover:bg-white/5 transition">
+              <a href={l.href} className="px-3 py-2 rounded-md hover:text-white hover:bg-white/7 transition">
                 {l.label}
               </a>
             </li>

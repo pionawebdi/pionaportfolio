@@ -10,6 +10,10 @@ const tools = [
   { name: "Midjourney", cat: "AI Visual" },
   { name: "Notion", cat: "Docs" },
   { name: "Framer", cat: "Motion" },
+  { name: "GitHub", cat: "Dev" },
+  { name: "Claude Code", cat: "AI Code" },
+  { name: "Codex", cat: "AI Code" },
+  { name: "v0", cat: "AI Build" },
 ];
 
 export function Tools() {

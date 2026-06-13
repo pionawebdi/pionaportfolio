@@ -18,17 +18,17 @@ export function About() {
         <div className="mt-14 grid md:grid-cols-2 gap-10">
           <Reveal delay={0.15}>
             <p className="text-white/75 leading-[1.9] text-[17px]">
-              저는 레이아웃, 사용성, 시각적 위계, 그리고 사용자 흐름을 이해하는
-              <span className="text-white font-semibold"> UI 디자이너</span>입니다.
-              인터페이스가 단순히 예뻐 보이는 것을 넘어, 사용자가 자연스럽게
-              목적을 달성하도록 만드는 것에 집중합니다.
+              레이아웃, 사용성, 시각적 위계, 사용자 흐름을 기반으로 인터페이스를 설계하는
+              <span className="text-white font-semibold"> UI/UX 디자이너</span>입니다.
+              아름다운 화면을 넘어, 사용자가 직관적으로 이해하고 자연스럽게 목적에 도달하는 경험을 만드는 데 집중합니다.
             </p>
           </Reveal>
           <Reveal delay={0.25}>
             <p className="text-white/65 leading-[1.9] text-[17px]">
-              생성형 AI는 디자인을 대체하는 도구가 아닙니다. 아이디어를 더 빠르게 탐색하고,
-              시각적 방향을 더 폭넓게 실험하며, 프로토타입을 즉시 만들어볼 수 있게 해주는
-              <span className="text-white font-semibold"> 확장된 디자인 파트너</span>입니다.
+              생성형 AI는 디자인을 대체하는 기술이 아니라, 디자이너의 가능성을 확장하는 새로운 협업 방식입니다. 
+		아이디어를 신속하게 탐색하고, 시각적 방향성을 폭넓게 실험하며, 
+		프로토타입을 즉각적으로 구체화할 수 있도록 돕는
+		<span className="text-white font-semibold"> 확장된 디자인 파트너</span>입니다.
             </p>
           </Reveal>
         </div>

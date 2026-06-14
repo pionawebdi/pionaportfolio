@@ -1,50 +1,56 @@
 "use client";
 import { Reveal } from "./Reveal";
 import {
-  LayoutGrid, Workflow, Palette, Component,
-  MonitorSmartphone, Sparkles, Cpu, PenLine,
+  Building2,
+  LayoutDashboard,
+  Smartphone,
+  MonitorSmartphone,
+  Sparkles,
+  Blocks,
+  BadgeCheck,
+  Megaphone,
 } from "lucide-react";
 
 const items = [
   {
-    icon: LayoutGrid,
-    title: "01. Enterprise Platform Design",
+    icon: Building2,
+    title: "Enterprise Platform",
     desc: "복잡한 업무 구조와 권한 체계를 고려한 B2B·관리자 플랫폼 UX/UI 설계",
   },
   {
-    icon: Workflow,
-    title: "02. SaaS Dashboard Design",
+    icon: LayoutDashboard,
+    title: "SaaS Dashboard",
     desc: "데이터 시각화와 사용 흐름을 최적화한 SaaS 대시보드 및 어드민 화면 설계",
   },
   {
-    icon: MonitorSmartphone,
-    title: "03. Mobile Web/App Design",
-    desc: "모바일 환경에 최적화된 Web/App UX 구조 설계 및 UI 디자인",
+    icon: Smartphone,
+    title: "Mobile Web/App",
+    desc: "모바일 환경에 최적화된 Web/App UX 구조 설계 및 UI 제작",
   },
   {
-    icon: Palette,
-    title: "04. Responsive Web Design",
-    desc: "다양한 디바이스와 해상도에 유연하게 대응하는 반응형 웹 UI 설계",
+    icon: MonitorSmartphone,
+    title: "Responsive Web",
+    desc: "다양한 디바이스와 해상도에 유연하게 대응하는 반응형 웹 구축",
   },
   {
     icon: Sparkles,
-    title: "05. AI-powered Service Platform",
-    desc: "AI 기능과 사용자 경험을 연결하는 서비스 구조 및 인터페이스 설계",
+    title: "Generative AI Design",
+    desc: "생성형 AI를 활용한 리서치, 아이디어 발굴, UX/UI 설계 및 디자인 고도화",
   },
   {
-    icon: Component,
-    title: "06. Design System",
+    icon: Blocks,
+    title: "Design System",
     desc: "일관된 브랜드 경험과 효율적인 협업을 위한 컴포넌트·가이드 구축",
   },
   {
-    icon: PenLine,
-    title: "07. Brand & Logo Design",
-    desc: "서비스 아이덴티티를 명확하게 전달하는 로고 및 브랜드 그래픽 디자인",
+    icon: BadgeCheck,
+    title: "Brand & Logo",
+    desc: "서비스 아이덴티티를 명확하게 전달하는 로고 및 브랜드 그래픽 작업",
   },
   {
-    icon: Cpu,
-    title: "08. Marketing Graphic Design",
-    desc: "프로모션, 배너, SNS, 랜딩페이지 등 비즈니스 목적에 맞는 그래픽 디자인",
+    icon: Megaphone,
+    title: "Marketing Graphic",
+    desc: "프로모션, 배너, SNS, 랜딩페이지 등 목적에 맞는 시각 디자인 작업",
   },
 ];
 

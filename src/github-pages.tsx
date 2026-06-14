@@ -9,6 +9,7 @@ import { Process } from "@/components/portfolio/Process";
 import { Strengths } from "@/components/portfolio/Strengths";
 import { Tools } from "@/components/portfolio/Tools";
 import { WhyAI } from "@/components/portfolio/WhyAI";
+import { FloatingChatButton } from "@/components/portfolio/FloatingChatButton";
 import "./styles.css";
 
 function GithubPagesApp() {
@@ -22,6 +23,7 @@ function GithubPagesApp() {
       <Tools />
       <WhyAI />
       <Contact />
+      <FloatingChatButton />
     </main>
   );
 }

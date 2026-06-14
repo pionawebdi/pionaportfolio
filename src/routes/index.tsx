@@ -7,6 +7,7 @@ import { Process } from "@/components/portfolio/Process";
 import { Tools } from "@/components/portfolio/Tools";
 import { WhyAI } from "@/components/portfolio/WhyAI";
 import { Contact } from "@/components/portfolio/Contact";
+import { FloatingChatButton } from "@/components/portfolio/FloatingChatButton";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -31,6 +32,7 @@ function Index() {
       <Tools />
       <WhyAI />
       <Contact />
+      <FloatingChatButton />
     </main>
   );
 }

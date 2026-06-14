@@ -57,7 +57,7 @@ export function Process() {
     <section
       ref={sectionRef}
       id="process"
-      className="relative pt-24 sm:pt-32 md:pt-40 pb-10 overflow-hidden"
+      className="relative pt-28 sm:pt-36 md:pt-44 pb-10 overflow-hidden"
       style={{ backgroundColor: "#0C0C0C" }}
     >
       <div className="max-w-7xl mx-auto px-6">
@@ -66,14 +66,14 @@ export function Process() {
         </Reveal>
         <Reveal delay={0.1}>
           <h2
-            className="text-gradient font-bold leading-[1.05] tracking-tight mb-4"
-            style={{ fontFamily: "Wanted Sans Variable, sans-serif", fontSize: "clamp(2rem, 5vw, 4rem)" }}
+            className="text-gradient font-bold leading-[1.02] tracking-tight mb-5"
+            style={{ fontFamily: "Wanted Sans Variable, sans-serif", fontSize: "clamp(2.2rem, 5.5vw, 4.5rem)" }}
           >
             Design Experiments
           </h2>
         </Reveal>
         <Reveal delay={0.2}>
-          <p className="text-white/55 max-w-2xl mb-12 text-[16px] leading-relaxed">
+          <p className="text-white/55 max-w-3xl mb-16 sm:mb-20 text-[16px] leading-relaxed">
             UI 디자인 사고를 기반으로, 생성형 AI 도구를
             <br className="md:hidden" />
             워크플로우 곳곳에 결합해 더 빠르고 유연한 결과물을 만듭니다.
@@ -81,7 +81,7 @@ export function Process() {
         </Reveal>
       </div>
 
-      <div className="space-y-3">
+      <div className="space-y-3 mt-2 sm:mt-4">
         <div className="flex gap-3 will-change-transform" style={{ transform: `translate3d(${rowOneX}px, 0, 0)` }}>
           {repeat.map((repeatIndex) =>
             rowOne.map((src, index) => (

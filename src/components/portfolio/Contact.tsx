@@ -40,25 +40,6 @@ const particles = [
   { left: "84%", top: "20%", size: "0.15rem", delay: 0.8, glow: "rgba(147,197,253,0.82)" },
 ];
 
-const networkPaths = [
-  { d: "M70 180 C180 110, 280 150, 390 100 S590 80, 700 160 S850 220, 930 140" },
-  { d: "M110 360 C230 290, 310 330, 430 270 S610 220, 720 300 S860 360, 950 250" },
-  { d: "M90 560 C220 470, 330 520, 450 450 S620 390, 740 470 S860 540, 940 430" },
-  { d: "M140 720 C260 650, 350 690, 470 620 S640 560, 760 630 S870 710, 960 610" },
-];
-
-const gridCells = [
-  { left: "10%", top: "18%", size: "1.3rem", delay: 0.1 },
-  { left: "18%", top: "26%", size: "1rem", delay: 0.5 },
-  { left: "26%", top: "40%", size: "1.1rem", delay: 0.8 },
-  { left: "34%", top: "18%", size: "1rem", delay: 0.2 },
-  { left: "44%", top: "28%", size: "1.2rem", delay: 1.1 },
-  { left: "54%", top: "20%", size: "1rem", delay: 0.4 },
-  { left: "66%", top: "34%", size: "1.15rem", delay: 0.9 },
-  { left: "76%", top: "18%", size: "1rem", delay: 0.3 },
-  { left: "84%", top: "30%", size: "1.2rem", delay: 1.2 },
-];
-
 export function Contact() {
   return (
     <section id="contact" className="relative py-32 px-6 bg-[#0C0C0C] overflow-hidden border-t border-white/10 isolate">
@@ -74,63 +55,6 @@ export function Contact() {
             transition={blob.transition}
           />
         ))}
-
-        <div className="absolute inset-0 hidden sm:block opacity-[0.12]">
-          <svg className="h-full w-full" viewBox="0 0 1000 900" preserveAspectRatio="none">
-            {networkPaths.map((path, index) => (
-              <motion.path
-                key={index}
-                d={path.d}
-                fill="none"
-                stroke="rgba(186,230,253,0.35)"
-                strokeWidth="1"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeDasharray="6 14"
-                animate={{ strokeDashoffset: [0, -64] }}
-                transition={{ duration: 18 + index * 2, repeat: Infinity, ease: "linear" }}
-              />
-            ))}
-            {gridCells.map((cell, index) => (
-              <motion.rect
-                key={index}
-                x={cell.left}
-                y={cell.top}
-                width={cell.size}
-                height={cell.size}
-                rx="4"
-                fill="rgba(191,219,254,0.22)"
-                stroke="rgba(167,139,250,0.34)"
-                strokeWidth="1"
-                animate={{ opacity: [0.12, 0.45, 0.12], rotate: [0, 6, 0], scale: [1, 1.15, 1] }}
-                transition={{ duration: 8 + index * 0.3, delay: cell.delay, repeat: Infinity, ease: "easeInOut" }}
-              />
-            ))}
-          </svg>
-        </div>
-
-        <div className="absolute inset-0 sm:hidden opacity-[0.06]">
-          <svg className="h-full w-full" viewBox="0 0 1000 900" preserveAspectRatio="none">
-            <motion.path
-              d="M110 320 C260 260, 360 300, 500 240 S760 200, 900 280"
-              fill="none"
-              stroke="rgba(186,230,253,0.28)"
-              strokeWidth="1"
-              strokeDasharray="5 15"
-              animate={{ strokeDashoffset: [0, -48] }}
-              transition={{ duration: 22, repeat: Infinity, ease: "linear" }}
-            />
-            <motion.path
-              d="M130 620 C280 560, 390 600, 530 540 S770 500, 900 580"
-              fill="none"
-              stroke="rgba(167,139,250,0.24)"
-              strokeWidth="1"
-              strokeDasharray="5 15"
-              animate={{ strokeDashoffset: [0, -42] }}
-              transition={{ duration: 26, repeat: Infinity, ease: "linear" }}
-            />
-          </svg>
-        </div>
 
         <div className="absolute inset-0 pointer-events-none">
           {particles.map((particle, index) => (

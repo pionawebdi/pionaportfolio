@@ -19,7 +19,7 @@ export function About() {
           <Reveal delay={0.15}>
             <p className="text-white/75 leading-[1.9] text-[17px]">
               레이아웃, 사용성, 시각적 위계, 사용자 흐름을 기반으로 인터페이스를 설계하는
-              <span className="text-white font-semibold"> UI/UX 디자이너</span>입니다.
+              <span className="text-white font-semibold"> UIUX 디자이너</span> 입니다.
               아름다운 화면을 넘어, 사용자가 직관적으로 이해하고 자연스럽게 목적에 도달하는 경험을 만드는 데 집중합니다.
             </p>
           </Reveal>

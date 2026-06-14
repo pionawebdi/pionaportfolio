@@ -5,53 +5,132 @@ import { Mail, ArrowUpRight, Github, Instagram, Linkedin } from "lucide-react";
 
 const auroraBlobs = [
   {
-    className: "left-[8%] top-[10%] h-72 w-72 sm:h-[28rem] sm:w-[28rem]",
-    gradient: "radial-gradient(circle, rgba(139,92,246,0.46) 0%, rgba(139,92,246,0.18) 33%, transparent 70%)",
-    animate: { x: [0, 28, -10, 0], y: [0, -10, 14, 0], scale: [1, 1.08, 0.99, 1] },
-    transition: { duration: 20, repeat: Infinity, ease: "easeInOut" as const },
+    className: "left-[6%] top-[8%] h-72 w-72 sm:h-[30rem] sm:w-[30rem]",
+    gradient:
+      "radial-gradient(circle, rgba(168,85,247,0.52) 0%, rgba(168,85,247,0.18) 30%, rgba(59,130,246,0.06) 54%, transparent 74%)",
+    animate: { x: [0, 26, -12, 0], y: [0, -14, 10, 0], scale: [1, 1.08, 1.01, 1] },
+    transition: { duration: 18, repeat: Infinity, ease: "easeInOut" as const },
   },
   {
-    className: "right-[2%] top-[6%] h-80 w-80 sm:h-[34rem] sm:w-[34rem]",
-    gradient: "radial-gradient(circle, rgba(59,130,246,0.42) 0%, rgba(59,130,246,0.16) 36%, transparent 72%)",
-    animate: { x: [0, -30, 14, 0], y: [0, 12, -10, 0], scale: [1, 1.06, 1.01, 1] },
+    className: "right-[0%] top-[0%] h-96 w-96 sm:h-[38rem] sm:w-[38rem]",
+    gradient:
+      "radial-gradient(circle, rgba(34,211,238,0.46) 0%, rgba(59,130,246,0.18) 34%, rgba(99,102,241,0.06) 58%, transparent 76%)",
+    animate: { x: [0, -36, 18, 0], y: [0, 14, -12, 0], scale: [1, 1.06, 1.02, 1] },
     transition: { duration: 22, repeat: Infinity, ease: "easeInOut" as const },
   },
   {
-    className: "left-1/2 top-[54%] h-[26rem] w-[26rem] -translate-x-1/2 sm:h-[38rem] sm:w-[38rem]",
-    gradient: "radial-gradient(circle, rgba(168,85,247,0.28) 0%, rgba(96,165,250,0.14) 42%, transparent 74%)",
-    animate: { x: [0, 14, -16, 0], y: [0, -8, 12, 0], scale: [1, 1.05, 1.02, 1] },
-    transition: { duration: 24, repeat: Infinity, ease: "easeInOut" as const },
+    className: "left-1/2 top-[46%] h-[30rem] w-[30rem] -translate-x-1/2 sm:h-[42rem] sm:w-[42rem]",
+    gradient:
+      "radial-gradient(circle, rgba(99,102,241,0.34) 0%, rgba(168,85,247,0.14) 36%, rgba(59,130,246,0.08) 58%, transparent 76%)",
+    animate: { x: [0, 18, -20, 0], y: [0, -10, 14, 0], scale: [1, 1.06, 1.02, 1] },
+    transition: { duration: 26, repeat: Infinity, ease: "easeInOut" as const },
   },
 ];
 
 const particles = [
-  { left: "10%", top: "14%", size: "0.22rem", delay: 0, glow: "rgba(255,255,255,0.8)" },
-  { left: "16%", top: "28%", size: "0.16rem", delay: 1.1, glow: "rgba(191,219,254,0.8)" },
-  { left: "24%", top: "56%", size: "0.18rem", delay: 0.6, glow: "rgba(196,181,253,0.8)" },
-  { left: "34%", top: "22%", size: "0.14rem", delay: 2.2, glow: "rgba(255,255,255,0.8)" },
-  { left: "44%", top: "34%", size: "0.2rem", delay: 0.9, glow: "rgba(147,197,253,0.9)" },
-  { left: "52%", top: "18%", size: "0.16rem", delay: 1.7, glow: "rgba(255,255,255,0.85)" },
-  { left: "60%", top: "62%", size: "0.2rem", delay: 0.4, glow: "rgba(191,219,254,0.78)" },
-  { left: "68%", top: "26%", size: "0.15rem", delay: 1.5, glow: "rgba(196,181,253,0.78)" },
-  { left: "76%", top: "48%", size: "0.22rem", delay: 2.1, glow: "rgba(255,255,255,0.82)" },
-  { left: "86%", top: "18%", size: "0.16rem", delay: 0.8, glow: "rgba(147,197,253,0.82)" },
+  { left: "8%", top: "16%", size: "0.2rem", delay: 0, glow: "rgba(255,255,255,0.78)" },
+  { left: "14%", top: "30%", size: "0.14rem", delay: 1.1, glow: "rgba(191,219,254,0.76)" },
+  { left: "22%", top: "58%", size: "0.16rem", delay: 0.6, glow: "rgba(196,181,253,0.76)" },
+  { left: "30%", top: "22%", size: "0.13rem", delay: 2.2, glow: "rgba(255,255,255,0.78)" },
+  { left: "42%", top: "38%", size: "0.18rem", delay: 0.9, glow: "rgba(147,197,253,0.84)" },
+  { left: "50%", top: "18%", size: "0.15rem", delay: 1.7, glow: "rgba(255,255,255,0.82)" },
+  { left: "58%", top: "64%", size: "0.18rem", delay: 0.4, glow: "rgba(191,219,254,0.78)" },
+  { left: "66%", top: "28%", size: "0.14rem", delay: 1.5, glow: "rgba(196,181,253,0.78)" },
+  { left: "74%", top: "50%", size: "0.2rem", delay: 2.1, glow: "rgba(255,255,255,0.82)" },
+  { left: "84%", top: "20%", size: "0.15rem", delay: 0.8, glow: "rgba(147,197,253,0.82)" },
+];
+
+const networkPaths = [
+  { d: "M70 180 C180 110, 280 150, 390 100 S590 80, 700 160 S850 220, 930 140" },
+  { d: "M110 360 C230 290, 310 330, 430 270 S610 220, 720 300 S860 360, 950 250" },
+  { d: "M90 560 C220 470, 330 520, 450 450 S620 390, 740 470 S860 540, 940 430" },
+  { d: "M140 720 C260 650, 350 690, 470 620 S640 560, 760 630 S870 710, 960 610" },
+];
+
+const gridCells = [
+  { left: "10%", top: "18%", size: "1.3rem", delay: 0.1 },
+  { left: "18%", top: "26%", size: "1rem", delay: 0.5 },
+  { left: "26%", top: "40%", size: "1.1rem", delay: 0.8 },
+  { left: "34%", top: "18%", size: "1rem", delay: 0.2 },
+  { left: "44%", top: "28%", size: "1.2rem", delay: 1.1 },
+  { left: "54%", top: "20%", size: "1rem", delay: 0.4 },
+  { left: "66%", top: "34%", size: "1.15rem", delay: 0.9 },
+  { left: "76%", top: "18%", size: "1rem", delay: 0.3 },
+  { left: "84%", top: "30%", size: "1.2rem", delay: 1.2 },
 ];
 
 export function Contact() {
   return (
     <section id="contact" className="relative py-32 px-6 bg-[#0C0C0C] overflow-hidden border-t border-white/10 isolate">
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.03),transparent_56%)] opacity-60" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_52%,rgba(34,211,238,0.08),transparent_28%),radial-gradient(circle_at_50%_58%,rgba(168,85,247,0.08),transparent_36%),radial-gradient(circle_at_center,rgba(255,255,255,0.03),transparent_58%)] opacity-70" />
         {auroraBlobs.map((blob, index) => (
           <motion.div
             key={index}
             aria-hidden="true"
-            className={`absolute rounded-full blur-2xl ${blob.className} opacity-70 sm:opacity-80`}
+            className={`absolute rounded-full blur-2xl ${blob.className} opacity-80 sm:opacity-90`}
             style={{ background: blob.gradient }}
             animate={blob.animate}
             transition={blob.transition}
           />
         ))}
+
+        <div className="absolute inset-0 hidden sm:block opacity-[0.12]">
+          <svg className="h-full w-full" viewBox="0 0 1000 900" preserveAspectRatio="none">
+            {networkPaths.map((path, index) => (
+              <motion.path
+                key={index}
+                d={path.d}
+                fill="none"
+                stroke="rgba(186,230,253,0.35)"
+                strokeWidth="1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeDasharray="6 14"
+                animate={{ strokeDashoffset: [0, -64] }}
+                transition={{ duration: 18 + index * 2, repeat: Infinity, ease: "linear" }}
+              />
+            ))}
+            {gridCells.map((cell, index) => (
+              <motion.rect
+                key={index}
+                x={cell.left}
+                y={cell.top}
+                width={cell.size}
+                height={cell.size}
+                rx="4"
+                fill="rgba(191,219,254,0.22)"
+                stroke="rgba(167,139,250,0.34)"
+                strokeWidth="1"
+                animate={{ opacity: [0.12, 0.45, 0.12], rotate: [0, 6, 0], scale: [1, 1.15, 1] }}
+                transition={{ duration: 8 + index * 0.3, delay: cell.delay, repeat: Infinity, ease: "easeInOut" }}
+              />
+            ))}
+          </svg>
+        </div>
+
+        <div className="absolute inset-0 sm:hidden opacity-[0.06]">
+          <svg className="h-full w-full" viewBox="0 0 1000 900" preserveAspectRatio="none">
+            <motion.path
+              d="M110 320 C260 260, 360 300, 500 240 S760 200, 900 280"
+              fill="none"
+              stroke="rgba(186,230,253,0.28)"
+              strokeWidth="1"
+              strokeDasharray="5 15"
+              animate={{ strokeDashoffset: [0, -48] }}
+              transition={{ duration: 22, repeat: Infinity, ease: "linear" }}
+            />
+            <motion.path
+              d="M130 620 C280 560, 390 600, 530 540 S770 500, 900 580"
+              fill="none"
+              stroke="rgba(167,139,250,0.24)"
+              strokeWidth="1"
+              strokeDasharray="5 15"
+              animate={{ strokeDashoffset: [0, -42] }}
+              transition={{ duration: 26, repeat: Infinity, ease: "linear" }}
+            />
+          </svg>
+        </div>
 
         <div className="absolute inset-0 pointer-events-none">
           {particles.map((particle, index) => (
@@ -63,17 +142,17 @@ export function Contact() {
                 top: particle.top,
                 width: particle.size,
                 height: particle.size,
-                opacity: 0.22,
-                boxShadow: `0 0 10px ${particle.glow}, 0 0 20px ${particle.glow}`,
+                opacity: 0.24,
+                boxShadow: `0 0 12px ${particle.glow}, 0 0 24px ${particle.glow}`,
               }}
               animate={{
-                y: [0, -18, 0],
-                x: [0, 6, 0],
-                opacity: [0.1, 0.46, 0.1],
-                scale: [1, 1.45, 1],
+                y: [0, -20, 0],
+                x: [0, 8, 0],
+                opacity: [0.12, 0.52, 0.12],
+                scale: [1, 1.5, 1],
               }}
               transition={{
-                duration: 6.5 + index * 0.35,
+                duration: 5.8 + index * 0.28,
                 delay: particle.delay,
                 repeat: Infinity,
                 ease: "easeInOut",
@@ -83,16 +162,16 @@ export function Contact() {
 
           <motion.span
             className="absolute rounded-full bg-white sm:hidden"
-            style={{
-              left: "18%",
-              top: "24%",
-              width: "0.24rem",
-              height: "0.24rem",
-              opacity: 0.14,
-              boxShadow: "0 0 8px rgba(191,219,254,0.45)",
-            }}
-            animate={{ y: [0, -10, 0], opacity: [0.08, 0.22, 0.08], scale: [1, 1.2, 1] }}
-            transition={{ duration: 7.5, repeat: Infinity, ease: "easeInOut" }}
+              style={{
+                left: "18%",
+                top: "24%",
+                width: "0.24rem",
+                height: "0.24rem",
+                opacity: 0.14,
+                boxShadow: "0 0 10px rgba(191,219,254,0.5)",
+              }}
+            animate={{ y: [0, -12, 0], opacity: [0.08, 0.24, 0.08], scale: [1, 1.22, 1] }}
+            transition={{ duration: 6.5, repeat: Infinity, ease: "easeInOut" }}
           />
           <motion.span
             className="absolute rounded-full bg-white sm:hidden"
@@ -102,10 +181,10 @@ export function Contact() {
               width: "0.26rem",
               height: "0.26rem",
               opacity: 0.12,
-              boxShadow: "0 0 8px rgba(196,181,253,0.45)",
+              boxShadow: "0 0 10px rgba(196,181,253,0.5)",
             }}
-            animate={{ y: [0, 12, 0], opacity: [0.06, 0.18, 0.06], scale: [1, 1.15, 1] }}
-            transition={{ duration: 8.2, repeat: Infinity, ease: "easeInOut" }}
+            animate={{ y: [0, 14, 0], opacity: [0.06, 0.2, 0.06], scale: [1, 1.18, 1] }}
+            transition={{ duration: 7.2, repeat: Infinity, ease: "easeInOut" }}
           />
         </div>
       </div>

@@ -6,14 +6,46 @@ import {
 } from "lucide-react";
 
 const items = [
-  { icon: LayoutGrid, title: "UI Design", desc: "명확한 시각 위계와 일관된 컴포넌트로 한눈에 이해되는 화면을 만듭니다." },
-  { icon: Workflow, title: "UX Structure", desc: "사용자 흐름과 정보 구조를 설계해 자연스러운 경험을 빌드합니다." },
-  { icon: Palette, title: "Visual Direction", desc: "브랜드와 무드에 맞는 톤, 컬러, 타이포그래피 방향을 잡습니다." },
-  { icon: Component, title: "Design Systems", desc: "재사용 가능한 토큰과 컴포넌트로 확장 가능한 시스템을 구축합니다." },
-  { icon: MonitorSmartphone, title: "Landing Page Design", desc: "전환을 이끄는 임팩트 있고 모션감 있는 랜딩페이지를 디자인합니다." },
-  { icon: Sparkles, title: "Generative AI Workflow", desc: "AI 도구를 디자인 프로세스에 통합해 작업 속도와 다양성을 끌어올립니다." },
-  { icon: Cpu, title: "AI-assisted Prototyping", desc: "AI로 빠른 컨셉과 실제 동작하는 프로토타입을 동시에 만듭니다." },
-  { icon: PenLine, title: "UX Writing", desc: "사용자가 이해하기 쉬운 마이크로카피와 톤 앤 보이스를 작성합니다." },
+  {
+    icon: LayoutGrid,
+    title: "01. Enterprise Platform Design",
+    desc: "복잡한 업무 구조와 권한 체계를 고려한 B2B·관리자 플랫폼 UX/UI 설계",
+  },
+  {
+    icon: Workflow,
+    title: "02. SaaS Dashboard Design",
+    desc: "데이터 시각화와 사용 흐름을 최적화한 SaaS 대시보드 및 어드민 화면 설계",
+  },
+  {
+    icon: MonitorSmartphone,
+    title: "03. Mobile Web/App Design",
+    desc: "모바일 환경에 최적화된 Web/App UX 구조 설계 및 UI 디자인",
+  },
+  {
+    icon: Palette,
+    title: "04. Responsive Web Design",
+    desc: "다양한 디바이스와 해상도에 유연하게 대응하는 반응형 웹 UI 설계",
+  },
+  {
+    icon: Sparkles,
+    title: "05. AI-powered Service Platform",
+    desc: "AI 기능과 사용자 경험을 연결하는 서비스 구조 및 인터페이스 설계",
+  },
+  {
+    icon: Component,
+    title: "06. Design System",
+    desc: "일관된 브랜드 경험과 효율적인 협업을 위한 컴포넌트·가이드 구축",
+  },
+  {
+    icon: PenLine,
+    title: "07. Brand & Logo Design",
+    desc: "서비스 아이덴티티를 명확하게 전달하는 로고 및 브랜드 그래픽 디자인",
+  },
+  {
+    icon: Cpu,
+    title: "08. Marketing Graphic Design",
+    desc: "프로모션, 배너, SNS, 랜딩페이지 등 비즈니스 목적에 맞는 그래픽 디자인",
+  },
 ];
 
 export function Strengths() {

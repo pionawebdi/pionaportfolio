@@ -25,10 +25,8 @@ export function About() {
           </Reveal>
           <Reveal delay={0.25}>
             <p className="text-white/65 leading-[1.9] text-[17px]">
-              생성형 AI는 디자인을 대체하는 기술이 아니라, 디자이너의 가능성을 확장하는 새로운 협업 방식입니다. 
-		아이디어를 신속하게 탐색하고, 시각적 방향성을 폭넓게 실험하며, 
-		프로토타입을 즉각적으로 구체화할 수 있도록 돕는
-		<span className="text-white font-semibold"> 확장된 디자인 파트너</span>입니다.
+              생성형 AI는 디자이너의 감각과 판단을 보완하며, 창작의 가능성을 넓히는 도구입니다.
+              빠른 아이디어 검증과 다양한 시각적 실험을 통해 디자인 과정의 깊이와 속도를 높입니다.
             </p>
           </Reveal>
         </div>

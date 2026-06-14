@@ -5,45 +5,36 @@ import { Mail, ArrowUpRight, Github, Instagram, Linkedin } from "lucide-react";
 
 const auroraBlobs = [
   {
-    className: "left-[8%] top-[12%] h-72 w-72 sm:h-[28rem] sm:w-[28rem]",
-    gradient: "radial-gradient(circle, rgba(139,92,246,0.38) 0%, rgba(139,92,246,0.12) 35%, transparent 72%)",
-    animate: { x: [0, 34, -8, 0], y: [0, -14, 18, 0], scale: [1, 1.05, 0.98, 1] },
-    transition: { duration: 28, repeat: Infinity, ease: "easeInOut" as const },
+    className: "left-[8%] top-[10%] h-72 w-72 sm:h-[28rem] sm:w-[28rem]",
+    gradient: "radial-gradient(circle, rgba(139,92,246,0.46) 0%, rgba(139,92,246,0.18) 33%, transparent 70%)",
+    animate: { x: [0, 28, -10, 0], y: [0, -10, 14, 0], scale: [1, 1.08, 0.99, 1] },
+    transition: { duration: 20, repeat: Infinity, ease: "easeInOut" as const },
   },
   {
-    className: "right-[4%] top-[8%] h-80 w-80 sm:h-[34rem] sm:w-[34rem]",
-    gradient: "radial-gradient(circle, rgba(59,130,246,0.34) 0%, rgba(59,130,246,0.10) 38%, transparent 72%)",
-    animate: { x: [0, -40, 18, 0], y: [0, 16, -12, 0], scale: [1, 1.08, 1, 1] },
-    transition: { duration: 34, repeat: Infinity, ease: "easeInOut" as const },
+    className: "right-[2%] top-[6%] h-80 w-80 sm:h-[34rem] sm:w-[34rem]",
+    gradient: "radial-gradient(circle, rgba(59,130,246,0.42) 0%, rgba(59,130,246,0.16) 36%, transparent 72%)",
+    animate: { x: [0, -30, 14, 0], y: [0, 12, -10, 0], scale: [1, 1.06, 1.01, 1] },
+    transition: { duration: 22, repeat: Infinity, ease: "easeInOut" as const },
   },
   {
-    className: "left-1/2 top-[52%] h-[26rem] w-[26rem] -translate-x-1/2 sm:h-[38rem] sm:w-[38rem]",
-    gradient: "radial-gradient(circle, rgba(168,85,247,0.22) 0%, rgba(96,165,250,0.10) 42%, transparent 74%)",
-    animate: { x: [0, 18, -22, 0], y: [0, -10, 16, 0], scale: [1, 1.04, 1.01, 1] },
-    transition: { duration: 38, repeat: Infinity, ease: "easeInOut" as const },
+    className: "left-1/2 top-[54%] h-[26rem] w-[26rem] -translate-x-1/2 sm:h-[38rem] sm:w-[38rem]",
+    gradient: "radial-gradient(circle, rgba(168,85,247,0.28) 0%, rgba(96,165,250,0.14) 42%, transparent 74%)",
+    animate: { x: [0, 14, -16, 0], y: [0, -8, 12, 0], scale: [1, 1.05, 1.02, 1] },
+    transition: { duration: 24, repeat: Infinity, ease: "easeInOut" as const },
   },
-];
-
-const networkLines = [
-  { x1: "6%", y1: "20%", x2: "22%", y2: "28%" },
-  { x1: "22%", y1: "28%", x2: "38%", y2: "18%" },
-  { x1: "38%", y1: "18%", x2: "54%", y2: "30%" },
-  { x1: "54%", y1: "30%", x2: "68%", y2: "20%" },
-  { x1: "68%", y1: "20%", x2: "86%", y2: "28%" },
-  { x1: "18%", y1: "52%", x2: "34%", y2: "44%" },
-  { x1: "34%", y1: "44%", x2: "50%", y2: "58%" },
-  { x1: "50%", y1: "58%", x2: "68%", y2: "48%" },
-  { x1: "68%", y1: "48%", x2: "82%", y2: "60%" },
 ];
 
 const particles = [
-  { left: "12%", top: "18%", size: "0.45rem", delay: 0 },
-  { left: "24%", top: "62%", size: "0.36rem", delay: 1.2 },
-  { left: "36%", top: "30%", size: "0.34rem", delay: 2.1 },
-  { left: "50%", top: "20%", size: "0.5rem", delay: 0.8 },
-  { left: "62%", top: "66%", size: "0.38rem", delay: 1.6 },
-  { left: "74%", top: "36%", size: "0.42rem", delay: 2.4 },
-  { left: "84%", top: "58%", size: "0.34rem", delay: 1.1 },
+  { left: "10%", top: "14%", size: "0.22rem", delay: 0, glow: "rgba(255,255,255,0.8)" },
+  { left: "16%", top: "28%", size: "0.16rem", delay: 1.1, glow: "rgba(191,219,254,0.8)" },
+  { left: "24%", top: "56%", size: "0.18rem", delay: 0.6, glow: "rgba(196,181,253,0.8)" },
+  { left: "34%", top: "22%", size: "0.14rem", delay: 2.2, glow: "rgba(255,255,255,0.8)" },
+  { left: "44%", top: "34%", size: "0.2rem", delay: 0.9, glow: "rgba(147,197,253,0.9)" },
+  { left: "52%", top: "18%", size: "0.16rem", delay: 1.7, glow: "rgba(255,255,255,0.85)" },
+  { left: "60%", top: "62%", size: "0.2rem", delay: 0.4, glow: "rgba(191,219,254,0.78)" },
+  { left: "68%", top: "26%", size: "0.15rem", delay: 1.5, glow: "rgba(196,181,253,0.78)" },
+  { left: "76%", top: "48%", size: "0.22rem", delay: 2.1, glow: "rgba(255,255,255,0.82)" },
+  { left: "86%", top: "18%", size: "0.16rem", delay: 0.8, glow: "rgba(147,197,253,0.82)" },
 ];
 
 export function Contact() {
@@ -55,99 +46,34 @@ export function Contact() {
           <motion.div
             key={index}
             aria-hidden="true"
-            className={`absolute rounded-full blur-3xl ${blob.className} opacity-60 sm:opacity-70`}
+            className={`absolute rounded-full blur-2xl ${blob.className} opacity-70 sm:opacity-80`}
             style={{ background: blob.gradient }}
             animate={blob.animate}
             transition={blob.transition}
           />
         ))}
 
-        <div className="absolute inset-0 hidden sm:block opacity-[0.12]">
-          <svg className="h-full w-full" viewBox="0 0 1000 900" preserveAspectRatio="none">
-            {networkLines.map((line, index) => (
-              <motion.line
-                key={index}
-                x1={line.x1}
-                y1={line.y1}
-                x2={line.x2}
-                y2={line.y2}
-                stroke="rgba(191,219,254,0.45)"
-                strokeWidth="1"
-                strokeLinecap="round"
-                animate={{ opacity: [0.18, 0.42, 0.18] }}
-                transition={{ duration: 9 + index * 0.6, repeat: Infinity, ease: "easeInOut" }}
-              />
-            ))}
-            {networkLines.flatMap((line, index) => [
-              <motion.circle
-                key={`a-${index}`}
-                cx={line.x1}
-                cy={line.y1}
-                r="2"
-                fill="rgba(232,240,255,0.55)"
-                animate={{ opacity: [0.25, 0.75, 0.25] }}
-                transition={{ duration: 6.5 + index * 0.5, repeat: Infinity, ease: "easeInOut" }}
-              />,
-              <motion.circle
-                key={`b-${index}`}
-                cx={line.x2}
-                cy={line.y2}
-                r="2"
-                fill="rgba(167,139,250,0.55)"
-                animate={{ opacity: [0.18, 0.62, 0.18] }}
-                transition={{ duration: 7.5 + index * 0.45, repeat: Infinity, ease: "easeInOut" }}
-              />,
-            ])}
-          </svg>
-        </div>
-
-        <div className="absolute inset-0 sm:hidden opacity-[0.08]">
-          <svg className="h-full w-full" viewBox="0 0 1000 900" preserveAspectRatio="none">
-            <motion.line
-              x1="10%"
-              y1="26%"
-              x2="34%"
-              y2="20%"
-              stroke="rgba(191,219,254,0.35)"
-              strokeWidth="1"
-              strokeLinecap="round"
-              animate={{ opacity: [0.12, 0.3, 0.12] }}
-              transition={{ duration: 11, repeat: Infinity, ease: "easeInOut" }}
-            />
-            <motion.line
-              x1="54%"
-              y1="38%"
-              x2="82%"
-              y2="30%"
-              stroke="rgba(167,139,250,0.3)"
-              strokeWidth="1"
-              strokeLinecap="round"
-              animate={{ opacity: [0.1, 0.24, 0.1] }}
-              transition={{ duration: 13, repeat: Infinity, ease: "easeInOut" }}
-            />
-          </svg>
-        </div>
-
         <div className="absolute inset-0 pointer-events-none">
           {particles.map((particle, index) => (
             <motion.span
               key={index}
-              className="absolute rounded-full bg-white shadow-[0_0_18px_rgba(168,85,247,0.55)] hidden sm:block"
+              className="absolute rounded-full bg-white hidden sm:block"
               style={{
                 left: particle.left,
                 top: particle.top,
                 width: particle.size,
                 height: particle.size,
-                opacity: 0.18,
+                opacity: 0.22,
+                boxShadow: `0 0 10px ${particle.glow}, 0 0 20px ${particle.glow}`,
               }}
               animate={{
-                y: [0, -14, 0],
-                x: [0, 8, 0],
-                opacity: [0.12, 0.3, 0.12],
-                scale: [1, 1.3, 1],
+                y: [0, -18, 0],
+                x: [0, 6, 0],
+                opacity: [0.1, 0.46, 0.1],
+                scale: [1, 1.45, 1],
               }}
               transition={{
-                duration: 10 + index * 0.7,
+                duration: 6.5 + index * 0.35,
                 delay: particle.delay,
                 repeat: Infinity,
                 ease: "easeInOut",
@@ -156,16 +82,30 @@ export function Contact() {
           ))}
 
           <motion.span
-            className="absolute rounded-full bg-white shadow-[0_0_12px_rgba(96,165,250,0.6)] sm:hidden"
-            style={{ left: "20%", top: "24%", width: "0.3rem", height: "0.3rem", opacity: 0.12 }}
-            animate={{ y: [0, -8, 0], opacity: [0.08, 0.18, 0.08] }}
-            transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute rounded-full bg-white sm:hidden"
+            style={{
+              left: "18%",
+              top: "24%",
+              width: "0.24rem",
+              height: "0.24rem",
+              opacity: 0.14,
+              boxShadow: "0 0 8px rgba(191,219,254,0.45)",
+            }}
+            animate={{ y: [0, -10, 0], opacity: [0.08, 0.22, 0.08], scale: [1, 1.2, 1] }}
+            transition={{ duration: 7.5, repeat: Infinity, ease: "easeInOut" }}
           />
           <motion.span
-            className="absolute rounded-full bg-white shadow-[0_0_12px_rgba(167,139,250,0.6)] sm:hidden"
-            style={{ right: "18%", top: "30%", width: "0.32rem", height: "0.32rem", opacity: 0.1 }}
-            animate={{ y: [0, 10, 0], opacity: [0.08, 0.16, 0.08] }}
-            transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute rounded-full bg-white sm:hidden"
+            style={{
+              right: "16%",
+              top: "30%",
+              width: "0.26rem",
+              height: "0.26rem",
+              opacity: 0.12,
+              boxShadow: "0 0 8px rgba(196,181,253,0.45)",
+            }}
+            animate={{ y: [0, 12, 0], opacity: [0.06, 0.18, 0.06], scale: [1, 1.15, 1] }}
+            transition={{ duration: 8.2, repeat: Infinity, ease: "easeInOut" }}
           />
         </div>
       </div>

@@ -145,7 +145,7 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.75 }}
           className="mt-10 flex flex-wrap justify-center gap-3"
         >
-          <a href="#projects" className="btn-neon">
+          <a href="#process" className="btn-neon">
             <Sparkles className="w-4 h-4" /> View Portfolio
           </a>
           <a href="#contact" className="btn-ghost">

@@ -1,60 +1,113 @@
 "use client";
-import { Reveal } from "./Reveal";
-import { Search, LayoutDashboard, Palette, Brain, Layers, CheckCircle2 } from "lucide-react";
 
-const steps = [
-  { icon: Search, label: "Research", desc: "문제 정의, 사용자 이해, 레퍼런스 수집" },
-  { icon: LayoutDashboard, label: "UI Structure", desc: "정보 구조, 와이어프레임, 플로우 설계" },
-  { icon: Palette, label: "Visual Direction", desc: "톤, 컬러, 타이포그래피 방향 정립" },
-  { icon: Brain, label: "AI Ideation", desc: "Midjourney·ChatGPT로 빠른 시각 탐색" },
-  { icon: Layers, label: "Prototype", desc: "Figma·Lovable로 실제 인터랙션 구현" },
-  { icon: CheckCircle2, label: "Refine", desc: "디테일 다듬기, 피드백 반영, 출시" },
+import { useEffect, useRef, useState } from "react";
+import { Reveal } from "./Reveal";
+
+const marqueeImages = [
+  "https://motionsites.ai/assets/hero-space-voyage-preview-eECLH3Yc.gif",
+  "https://motionsites.ai/assets/hero-codenest-preview-Cgppc2qV.gif",
+  "https://motionsites.ai/assets/hero-vex-ventures-preview-BczMFIiw.gif",
+  "https://motionsites.ai/assets/hero-stellar-ai-v2-preview-DjvxjG3C.gif",
+  "https://motionsites.ai/assets/hero-asme-preview-B_nGDnTP.gif",
+  "https://motionsites.ai/assets/hero-transform-data-preview-Cx5OU29N.gif",
+  "https://motionsites.ai/assets/hero-vitara-preview-Cjz2QYyU.gif",
+  "https://motionsites.ai/assets/hero-terra-preview-BFjrCr7T.gif",
+  "https://motionsites.ai/assets/hero-skyelite-preview-DHaZIgUv.gif",
+  "https://motionsites.ai/assets/hero-aethera-preview-DknSlcTa.gif",
+  "https://motionsites.ai/assets/hero-designpro-preview-D8c5_een.gif",
+  "https://motionsites.ai/assets/hero-stellar-ai-preview-D3HL6bw1.gif",
+  "https://motionsites.ai/assets/hero-xportfolio-preview-D4A8maiC.gif",
+  "https://motionsites.ai/assets/hero-orbit-web3-preview-BXt4OttD.gif",
+  "https://motionsites.ai/assets/hero-nexora-preview-cx5HmUgo.gif",
+  "https://motionsites.ai/assets/hero-evr-ventures-preview-DZxeVFEX.gif",
+  "https://motionsites.ai/assets/hero-planet-orbit-preview-DWAP8Z1P.gif",
+  "https://motionsites.ai/assets/hero-new-era-preview-CocuDUm9.gif",
+  "https://motionsites.ai/assets/hero-wealth-preview-B70idl_u.gif",
+  "https://motionsites.ai/assets/hero-luminex-preview-CxOP7ce6.gif",
+  "https://motionsites.ai/assets/hero-celestia-preview-0yO3jXO8.gif",
 ];
 
+const rowOne = marqueeImages.slice(0, 11);
+const rowTwo = marqueeImages.slice(11);
+const repeat = [0, 1, 2];
+
 export function Process() {
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const [offset, setOffset] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sectionTop = sectionRef.current?.offsetTop ?? 0;
+      const nextOffset = (window.scrollY - sectionTop + window.innerHeight) * 0.3;
+      setOffset(nextOffset);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const rowOneX = offset - 200;
+  const rowTwoX = -(offset - 200);
+
   return (
-    <section id="process" className="relative py-32 px-6">
-      <div className="max-w-6xl mx-auto">
+    <section
+      ref={sectionRef}
+      id="process"
+      className="relative pt-24 sm:pt-32 md:pt-40 pb-10 overflow-hidden"
+      style={{ backgroundColor: "#0C0C0C" }}
+    >
+      <div className="max-w-7xl mx-auto px-6">
         <Reveal>
-          <div className="text-xs uppercase tracking-[0.3em] text-white/40 mb-4">03 — Process</div>
+          <div className="text-xs uppercase tracking-[0.3em] text-white/40 mb-4">03 — Concept Work</div>
         </Reveal>
         <Reveal delay={0.1}>
-          <h2 className="text-gradient font-bold leading-[1.1] tracking-tight mb-4"
-            style={{ fontFamily: "Wanted Sans Variable, sans-serif", fontSize: "clamp(2rem, 5vw, 4rem)" }}>
-            AI-enhanced <br /> design process.
+          <h2
+            className="text-gradient font-bold leading-[1.05] tracking-tight mb-4"
+            style={{ fontFamily: "Wanted Sans Variable, sans-serif", fontSize: "clamp(2rem, 5vw, 4rem)" }}
+          >
+            Marquee section.
           </h2>
         </Reveal>
         <Reveal delay={0.2}>
-          <p className="text-white/55 max-w-2xl mb-20 text-[16px] leading-relaxed">
-            전통적인 UI 디자인 사고를 기반으로, 생성형 AI 도구를 워크플로우 곳곳에 결합해
-            더 빠르고 유연한 결과물을 만듭니다.
+          <p className="text-white/55 max-w-2xl mb-12 text-[16px] leading-relaxed">
+            스크롤 위치에 따라 두 줄의 GIF 카드가 서로 반대 방향으로 흘러가는 컨셉 섹션입니다.
           </p>
         </Reveal>
+      </div>
 
-        <div className="relative">
-          {/* Connecting line */}
-          <Reveal>
-            <div className="hidden md:block absolute top-12 left-0 right-0 h-px bg-white/14" />
-          </Reveal>
+      <div className="space-y-3">
+        <div className="flex gap-3 will-change-transform" style={{ transform: `translate3d(${rowOneX}px, 0, 0)` }}>
+          {repeat.map((repeatIndex) =>
+            rowOne.map((src, index) => (
+              <div key={`${repeatIndex}-${src}`} className="shrink-0">
+                <img
+                  src={src}
+                  alt={`Marquee preview ${index + 1}`}
+                  loading="lazy"
+                  className="w-[420px] h-[270px] rounded-2xl object-cover bg-black/20"
+                />
+              </div>
+            )),
+          )}
+        </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-6">
-            {steps.map((s, i) => (
-              <Reveal key={s.label} delay={i * 0.08}>
-                <div className="relative text-center">
-                  <div className="relative mx-auto w-24 h-24 mb-5">
-                    <div className="glass-strong relative w-full h-full rounded-xl flex items-center justify-center transition-transform duration-500 hover:-translate-y-2 hover:border-[#E7F064]/70">
-                      <s.icon className="w-7 h-7 text-[#E7F064]" />
-                      <div className="absolute -top-2 -right-2 w-6 h-6 rounded-md bg-white text-[10px] flex items-center justify-center text-black font-mono">
-                        0{i + 1}
-                      </div>
-                    </div>
-                  </div>
-                  <h3 className="text-white font-semibold text-sm mb-1">{s.label}</h3>
-                  <p className="text-white/45 text-xs leading-relaxed">{s.desc}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
+        <div className="flex gap-3 will-change-transform" style={{ transform: `translate3d(${rowTwoX}px, 0, 0)` }}>
+          {repeat.map((repeatIndex) =>
+            rowTwo.map((src, index) => (
+              <div key={`${repeatIndex}-${src}`} className="shrink-0">
+                <img
+                  src={src}
+                  alt={`Marquee preview ${index + 12}`}
+                  loading="lazy"
+                  className="w-[420px] h-[270px] rounded-2xl object-cover bg-black/20"
+                />
+              </div>
+            )),
+          )}
         </div>
       </div>
     </section>

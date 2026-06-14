@@ -5,7 +5,6 @@ import { About } from "@/components/portfolio/About";
 import { Strengths } from "@/components/portfolio/Strengths";
 import { Process } from "@/components/portfolio/Process";
 import { Tools } from "@/components/portfolio/Tools";
-import { Projects } from "@/components/portfolio/Projects";
 import { WhyAI } from "@/components/portfolio/WhyAI";
 import { Contact } from "@/components/portfolio/Contact";
 
@@ -30,7 +29,6 @@ function Index() {
       <Strengths />
       <Process />
       <Tools />
-      <Projects />
       <WhyAI />
       <Contact />
     </main>

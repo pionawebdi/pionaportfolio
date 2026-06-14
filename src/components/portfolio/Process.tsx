@@ -75,7 +75,7 @@ export function Process() {
         <Reveal delay={0.2}>
           <p className="text-white/55 max-w-2xl mb-12 text-[16px] leading-relaxed">
             UI 디자인 사고를 기반으로, 생성형 AI 도구를
-            <br />
+            <br className="md:hidden" />
             워크플로우 곳곳에 결합해 더 빠르고 유연한 결과물을 만듭니다.
           </p>
         </Reveal>

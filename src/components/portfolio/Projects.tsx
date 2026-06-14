@@ -47,7 +47,7 @@ export function Projects() {
         </Reveal>
         <Reveal delay={0.2}>
           <p className="text-white/55 max-w-2xl mb-16 text-[16px] leading-relaxed">
-            UI 디자인 사고와 생성형 AI를 결합해 만든 컨셉 작업들입니다.
+            UIUX 디자인 사고를 바탕으로 완성한 프로젝트 작업들입니다.
           </p>
         </Reveal>
 

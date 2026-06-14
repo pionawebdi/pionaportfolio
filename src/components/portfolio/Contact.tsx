@@ -226,7 +226,7 @@ export function Contact() {
 
       <div className="max-w-5xl mx-auto text-center relative z-10">
         <Reveal>
-          <div className="text-xs uppercase tracking-[0.3em] text-white/40 mb-6">07 — Contact</div>
+          <div className="text-xs uppercase tracking-[0.3em] text-white/40 mb-6">06 — Contact</div>
         </Reveal>
         <Reveal delay={0.1}>
           <h2 className="text-gradient font-bold leading-[1.05] tracking-tight"

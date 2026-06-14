@@ -15,7 +15,7 @@ export function WhyAI() {
     <section className="relative py-32 px-6">
       <div className="max-w-6xl mx-auto">
         <Reveal>
-          <div className="text-xs uppercase tracking-[0.3em] text-white/40 mb-4">06 — Why Generative AI</div>
+          <div className="text-xs uppercase tracking-[0.3em] text-white/40 mb-4">05 — Why Generative AI</div>
         </Reveal>
         <Reveal delay={0.1}>
           <h2 className="text-gradient font-bold leading-[1.1] tracking-tight mb-4"

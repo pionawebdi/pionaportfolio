@@ -246,7 +246,7 @@ export function Contact() {
             <a href="mailto:webdibi@naver.com" className="btn-neon">
               <Mail className="w-4 h-4" /> webdibi@naver.com <ArrowUpRight className="w-4 h-4" />
             </a>
-            <a href="#" className="btn-ghost">Portfolio</a>
+            <a href="#" className="btn-ghost">View More</a>
           </div>
         </Reveal>
 

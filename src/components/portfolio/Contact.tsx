@@ -9,21 +9,21 @@ const auroraBlobs = [
     gradient:
       "radial-gradient(circle, rgba(168,85,247,0.72) 0%, rgba(168,85,247,0.26) 28%, rgba(59,130,246,0.1) 54%, transparent 76%)",
     animate: { x: [0, 58, -26, 0], y: [0, -22, 16, 0], scale: [1, 1.12, 1.03, 1] },
-    transition: { duration: 9, repeat: Infinity, ease: "easeInOut" as const },
+    transition: { duration: 6.5, repeat: Infinity, ease: "easeInOut" as const },
   },
   {
     className: "right-[0%] top-[0%] h-96 w-96 sm:h-[38rem] sm:w-[38rem]",
     gradient:
       "radial-gradient(circle, rgba(34,211,238,0.66) 0%, rgba(59,130,246,0.26) 34%, rgba(99,102,241,0.1) 58%, transparent 76%)",
     animate: { x: [0, -66, 30, 0], y: [0, 22, -18, 0], scale: [1, 1.1, 1.03, 1] },
-    transition: { duration: 10, repeat: Infinity, ease: "easeInOut" as const },
+    transition: { duration: 7, repeat: Infinity, ease: "easeInOut" as const },
   },
   {
     className: "left-1/2 top-[46%] h-[30rem] w-[30rem] -translate-x-1/2 sm:h-[42rem] sm:w-[42rem]",
     gradient:
       "radial-gradient(circle, rgba(99,102,241,0.54) 0%, rgba(168,85,247,0.22) 36%, rgba(59,130,246,0.12) 58%, transparent 76%)",
     animate: { x: [0, 30, -30, 0], y: [0, -14, 18, 0], scale: [1, 1.08, 1.04, 1] },
-    transition: { duration: 11, repeat: Infinity, ease: "easeInOut" as const },
+    transition: { duration: 7.5, repeat: Infinity, ease: "easeInOut" as const },
   },
 ];
 
@@ -35,7 +35,7 @@ const lightColumns = [
     gradient:
       "linear-gradient(180deg, rgba(168,85,247,0) 0%, rgba(168,85,247,0.18) 18%, rgba(168,85,247,0.46) 50%, rgba(59,130,246,0.22) 78%, rgba(59,130,246,0) 100%)",
     animate: { x: [0, 58, -24, 0], y: [0, -12, 14, 0], opacity: [0.46, 0.82, 0.48] },
-    transition: { duration: 8.5, repeat: Infinity, ease: "easeInOut" as const },
+    transition: { duration: 6.1, repeat: Infinity, ease: "easeInOut" as const },
   },
   {
     left: "36%",
@@ -44,7 +44,7 @@ const lightColumns = [
     gradient:
       "linear-gradient(180deg, rgba(34,211,238,0) 0%, rgba(34,211,238,0.16) 16%, rgba(59,130,246,0.4) 48%, rgba(168,85,247,0.22) 74%, rgba(168,85,247,0) 100%)",
     animate: { x: [0, -62, 26, 0], y: [0, 12, -12, 0], opacity: [0.4, 0.72, 0.42] },
-    transition: { duration: 9, repeat: Infinity, ease: "easeInOut" as const },
+    transition: { duration: 6.5, repeat: Infinity, ease: "easeInOut" as const },
   },
   {
     left: "66%",
@@ -53,7 +53,7 @@ const lightColumns = [
     gradient:
       "linear-gradient(180deg, rgba(59,130,246,0) 0%, rgba(59,130,246,0.2) 20%, rgba(34,211,238,0.46) 48%, rgba(99,102,241,0.22) 74%, rgba(99,102,241,0) 100%)",
     animate: { x: [0, 54, -28, 0], y: [0, -12, 14, 0], opacity: [0.38, 0.7, 0.4] },
-    transition: { duration: 8.2, repeat: Infinity, ease: "easeInOut" as const },
+    transition: { duration: 5.9, repeat: Infinity, ease: "easeInOut" as const },
   },
   {
     left: "82%",
@@ -62,7 +62,7 @@ const lightColumns = [
     gradient:
       "linear-gradient(180deg, rgba(168,85,247,0) 0%, rgba(34,211,238,0.18) 22%, rgba(59,130,246,0.38) 52%, rgba(99,102,241,0.18) 76%, rgba(99,102,241,0) 100%)",
     animate: { x: [0, -48, 20, 0], y: [0, 10, -14, 0], opacity: [0.34, 0.62, 0.36] },
-    transition: { duration: 9.5, repeat: Infinity, ease: "easeInOut" as const },
+    transition: { duration: 6.8, repeat: Infinity, ease: "easeInOut" as const },
   },
 ];
 
@@ -145,7 +145,7 @@ export function Contact() {
                 scale: [1, 1.6, 1],
               }}
               transition={{
-                duration: 4.4 + index * 0.18,
+                duration: 3.2 + index * 0.12,
                 delay: particle.delay,
                 repeat: Infinity,
                 ease: "easeInOut",
@@ -206,7 +206,7 @@ export function Contact() {
                 boxShadow: "0 0 10px rgba(191,219,254,0.44)",
               }}
             animate={{ y: [0, -10, 0], opacity: [0.06, 0.18, 0.06], scale: [1, 1.18, 1] }}
-            transition={{ duration: 5.4, repeat: Infinity, ease: "easeInOut" }}
+            transition={{ duration: 3.8, repeat: Infinity, ease: "easeInOut" }}
           />
           <motion.span
             className="absolute rounded-full bg-white sm:hidden"
@@ -219,7 +219,7 @@ export function Contact() {
               boxShadow: "0 0 10px rgba(196,181,253,0.44)",
             }}
             animate={{ y: [0, 12, 0], opacity: [0.05, 0.16, 0.05], scale: [1, 1.14, 1] }}
-            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+            transition={{ duration: 4.2, repeat: Infinity, ease: "easeInOut" }}
           />
         </div>
       </div>

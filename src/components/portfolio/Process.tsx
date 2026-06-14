@@ -69,12 +69,16 @@ export function Process() {
             className="text-gradient font-bold leading-[1.05] tracking-tight mb-4"
             style={{ fontFamily: "Wanted Sans Variable, sans-serif", fontSize: "clamp(2rem, 5vw, 4rem)" }}
           >
-            Marquee section.
+            Design Experiments
           </h2>
         </Reveal>
         <Reveal delay={0.2}>
           <p className="text-white/55 max-w-2xl mb-12 text-[16px] leading-relaxed">
-            스크롤 위치에 따라 두 줄의 GIF 카드가 서로 반대 방향으로 흘러가는 컨셉 섹션입니다.
+            UI 디자인 사고를 기반으로,
+            <br />
+            생성형 AI 도구를 워크플로우 곳곳에 결합해
+            <br />
+            더 빠르고 유연한 결과물을 만듭니다.
           </p>
         </Reveal>
       </div>

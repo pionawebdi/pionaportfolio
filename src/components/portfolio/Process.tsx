@@ -2,29 +2,48 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Reveal } from "./Reveal";
+import img01 from "@/assets/img01.png";
+import img02 from "@/assets/img02.png";
+import img03 from "@/assets/img03.jpg";
+import img04 from "@/assets/img04.png";
+import img05 from "@/assets/img05.png";
+import img06 from "@/assets/img06.png";
+import img07 from "@/assets/img07.png";
+import img08 from "@/assets/img08.jpg";
+import img09 from "@/assets/img09.png";
+import img10 from "@/assets/img10.png";
+import img11 from "@/assets/img11.png";
+import img12 from "@/assets/img12.png";
+import img13 from "@/assets/img13.png";
+import img14 from "@/assets/img14.png";
+import img15 from "@/assets/img15.png";
+import img16 from "@/assets/img16.png";
+import img17 from "@/assets/img17.png";
+import img18 from "@/assets/img18.png";
+import img19 from "@/assets/img19.png";
+import img20 from "@/assets/img20.png";
 
 const marqueeImages = [
-  "https://motionsites.ai/assets/hero-space-voyage-preview-eECLH3Yc.gif",
-  "https://motionsites.ai/assets/hero-codenest-preview-Cgppc2qV.gif",
-  "https://motionsites.ai/assets/hero-vex-ventures-preview-BczMFIiw.gif",
-  "https://motionsites.ai/assets/hero-stellar-ai-v2-preview-DjvxjG3C.gif",
-  "https://motionsites.ai/assets/hero-asme-preview-B_nGDnTP.gif",
-  "https://motionsites.ai/assets/hero-transform-data-preview-Cx5OU29N.gif",
-  "https://motionsites.ai/assets/hero-vitara-preview-Cjz2QYyU.gif",
-  "https://motionsites.ai/assets/hero-terra-preview-BFjrCr7T.gif",
-  "https://motionsites.ai/assets/hero-skyelite-preview-DHaZIgUv.gif",
-  "https://motionsites.ai/assets/hero-aethera-preview-DknSlcTa.gif",
-  "https://motionsites.ai/assets/hero-designpro-preview-D8c5_een.gif",
-  "https://motionsites.ai/assets/hero-stellar-ai-preview-D3HL6bw1.gif",
-  "https://motionsites.ai/assets/hero-xportfolio-preview-D4A8maiC.gif",
-  "https://motionsites.ai/assets/hero-orbit-web3-preview-BXt4OttD.gif",
-  "https://motionsites.ai/assets/hero-nexora-preview-cx5HmUgo.gif",
-  "https://motionsites.ai/assets/hero-evr-ventures-preview-DZxeVFEX.gif",
-  "https://motionsites.ai/assets/hero-planet-orbit-preview-DWAP8Z1P.gif",
-  "https://motionsites.ai/assets/hero-new-era-preview-CocuDUm9.gif",
-  "https://motionsites.ai/assets/hero-wealth-preview-B70idl_u.gif",
-  "https://motionsites.ai/assets/hero-luminex-preview-CxOP7ce6.gif",
-  "https://motionsites.ai/assets/hero-celestia-preview-0yO3jXO8.gif",
+  img01,
+  img02,
+  img03,
+  img04,
+  img05,
+  img06,
+  img07,
+  img08,
+  img09,
+  img10,
+  img11,
+  img12,
+  img13,
+  img14,
+  img15,
+  img16,
+  img17,
+  img18,
+  img19,
+  img20,
 ];
 
 const rowOne = marqueeImages.slice(0, 11);
